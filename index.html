@@ -1,28 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Centurion Transportation</title>
   <meta charset="UTF-8">
+  <title>Centurion Transportation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #1f2937;
+    }
+    header {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .service-card {
+      width: 250px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .why-choose ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+    .why-choose li::before {
+      content: "✔ ";
+      color: #0f172a;
+    }
+    .contact a {
+      color: #0f172a;
+      text-decoration: underline;
+    }
+    .contact button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 1rem;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; padding: 40px;">
-  <h1>Centurion Transportation</h1>
-  <p>Reliable, safe, and on-time transportation services you can trust.</p>
+<body>
 
-  <h2>Our Services</h2>
-  <ul>
-    <li>Local & Long-Distance Transportation</li>
-    <li>Commercial Transportation Services</li>
-    <li>Scheduled & On-Demand Transport</li>
-  </ul>
+  <!-- Hero Section -->
+  <header>
+    <h1>Centurion Transportation</h1>
+    <p>Reliable, safe, and on-time transportation solutions for your business and personal needs.</p>
+  </header>
 
-  <h2>Why Choose Centurion Transportation</h2>
-  <ul>
-    <li>Professional and experienced drivers</li>
-    <li>On-time and dependable service</li>
-    <li>Customer-first approach</li>
-  </ul>
+  <!-- Services Section -->
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Local & Long-Distance Transport</h3>
+        <p>Flexible solutions for short and long routes.</p>
+      </div>
+      <div class="service-card">
+        <h3>Commercial Transportation</h3>
+        <p>Dependable service for your business deliveries.</p>
+      </div>
+      <div class="service-card">
+        <h3>On-Demand & Scheduled Services</h3>
+        <p>Pick-up or delivery when you need it.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Contact Us</h2>
-  <p>Email: transportationcenturion@gmail.com</p>
+  <!-- Why Choose Us Section -->
+  <section class="why-choose" style="background-color:#f1f5f9;">
+    <h2>Why Choose Centurion Transportation</h2>
+    <ul>
+      <li>Professional and experienced drivers</li>
+      <li>On-time and dependable service</li>
+      <li>Customer-first approach</li>
+      <li>Safe and secure transport solutions</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:transportationcenturion@gmail.com">transportationcenturion@gmail.com</a></p>
+    <p>Phone: (XXX) XXX-XXXX</p>
+    <button>Request a Quote</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Centurion Transportation. All rights reserved.
+  </footer>
+
 </body>
 </html>
