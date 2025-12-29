@@ -9,30 +9,17 @@ body {
 header {
   background-color: #0f172a;
   color: #ffffff;
-  padding: 40px 20px;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.header-container {
-  display: flex;
-  align-items: center; /* vertically center logo and text */
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px; /* space between logo and text */
-  flex-wrap: wrap;
-}
-
-.logo {
-  width: 120px; /* adjust size */
-  height: auto;
-}
-
-.header-text h1 {
+header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
-.header-text p {
-  margin: 5px 0 0 0;
+header p {
+  margin-top: 10px;
   font-size: 1.2rem;
 }
 
