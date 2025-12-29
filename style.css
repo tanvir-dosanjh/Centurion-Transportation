@@ -1,0 +1,97 @@
+body {
+  font-family: Menlo, monospace;
+  margin: 0;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.service-card {
+  width: 250px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose {
+  background-color: #f1f5f9;
+}
+
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.why-choose li::before {
+  content: "✔ ";
+  color: #0f172a;
+}
+
+.contact a {
+  color: #0f172a;
+  text-decoration: underline;
+}
+
+.contact button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact button:hover {
+  background-color: #1e293b;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
