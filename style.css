@@ -6,21 +6,31 @@ body {
 }
 
 header {
+  display: flex;
+  flex-direction: column; /* logo above text */
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
   background-color: #0f172a;
   color: #ffffff;
-  padding: 80px 20px;
   text-align: center;
+}
+
+header .logo {
+  width: 150px; /* adjust size as needed */
+  height: auto;
+  margin-bottom: 20px;
 }
 
 header h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 header p {
   font-size: 1.2rem;
   max-width: 600px;
-  margin: 0 auto;
+  margin-top: 10px;
 }
 
 section {
@@ -70,7 +80,6 @@ section {
 .contact form {
   max-width: 400px;
   margin: 20px auto 0;
-  text-align: left;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -86,7 +95,6 @@ section {
 }
 
 .contact button {
-  margin-top: 10px;
   padding: 12px 20px;
   font-size: 1rem;
   background-color: #0f172a;
