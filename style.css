@@ -5,24 +5,25 @@ body {
   background-color: #ffffff;
 }
 
+/* Header */
 header {
   background-color: #0f172a;
   color: #ffffff;
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
 
 header h1 {
+  margin: 0;
   font-size: 3rem;
-  margin-bottom: 20px;
 }
 
 header p {
+  margin-top: 10px;
   font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
+/* Sections */
 section {
   padding: 60px 20px;
   text-align: center;
@@ -67,14 +68,26 @@ section {
   color: #0f172a;
 }
 
-.contact a {
-  color: #0f172a;
-  text-decoration: underline;
+/* Contact Form */
+.contact form {
+  max-width: 400px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact input {
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact button {
-  margin-top: 20px;
-  padding: 12px 30px;
+  padding: 12px 20px;
   font-size: 1rem;
   background-color: #0f172a;
   color: #ffffff;
@@ -89,9 +102,11 @@ section {
   transform: scale(1.05);
 }
 
+/* Footer */
 footer {
   background-color: #0f172a;
   color: #ffffff;
   padding: 40px 20px;
   text-align: center;
 }
+
