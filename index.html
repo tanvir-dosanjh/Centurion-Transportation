@@ -5,13 +5,14 @@
   <title>Centurion Transportation</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Menlo, monospace; /* Updated font */
       margin: 0;
-      color: #1f2937;
+      color: #1f2937; /* Dark gray text for readability */
+      background-color: #ffffff; /* White background */
     }
     header {
-      background-color: #0f172a;
-      color: #f1f5f9;
+      background-color: #0f172a; /* Navy header */
+      color: #ffffff; /* White text */
       padding: 80px 20px;
       text-align: center;
     }
@@ -37,9 +38,18 @@
     }
     .service-card {
       width: 250px;
-      border: 1px solid #e2e8f0;
+      border: 1px solid #e2e8f0; /* Light gray border */
       border-radius: 8px;
       padding: 20px;
+      background-color: #f8f9fa; /* Light gray card background */
+      transition: transform 0.3s, box-shadow 0.3s; /* Optional hover effect */
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .why-choose {
+      background-color: #f1f5f9; /* Light gray section */
     }
     .why-choose ul {
       list-style: none;
@@ -50,25 +60,25 @@
     }
     .why-choose li::before {
       content: "✔ ";
-      color: #0f172a;
+      color: #0f172a; /* Navy checkmark */
     }
     .contact a {
-      color: #0f172a;
+      color: #0f172a; /* Navy link */
       text-decoration: underline;
     }
     .contact button {
       margin-top: 20px;
       padding: 12px 30px;
       font-size: 1rem;
-      background-color: #0f172a;
-      color: #f1f5f9;
+      background-color: #0f172a; /* Navy button */
+      color: #ffffff; /* White text */
       border: none;
       border-radius: 6px;
       cursor: pointer;
     }
     footer {
-      background-color: #0f172a;
-      color: #f1f5f9;
+      background-color: #0f172a; /* Navy footer */
+      color: #ffffff; /* White text */
       padding: 40px 20px;
       text-align: center;
     }
@@ -91,10 +101,6 @@
         <p>Flexible solutions for short and long routes.</p>
       </div>
       <div class="service-card">
-        <h3>Commercial Transportation</h3>
-        <p>Dependable service for your business deliveries.</p>
-      </div>
-      <div class="service-card">
         <h3>On-Demand & Scheduled Services</h3>
         <p>Pick-up or delivery when you need it.</p>
       </div>
@@ -102,13 +108,15 @@
   </section>
 
   <!-- Why Choose Us Section -->
-  <section class="why-choose" style="background-color:#f1f5f9;">
+  <section class="why-choose">
     <h2>Why Choose Centurion Transportation</h2>
     <ul>
-      <li>Professional and experienced drivers</li>
+      <li>Professional and Experienced Chauffeur</li>
       <li>On-time and dependable service</li>
       <li>Customer-first approach</li>
       <li>Safe and secure transport solutions</li>
+      <li>Airport or Tour Transportation Services</li>
+      <li>Reliable and Punctual Service</li>
     </ul>
   </section>
 
