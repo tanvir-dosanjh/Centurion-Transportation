@@ -1,8 +1,17 @@
-// Select the quote button
-const quoteButton = document.getElementById('quoteButton');
+// Select the form
+const quoteForm = document.getElementById('quoteForm');
 
-// Add click event listener
-quoteButton.addEventListener('click', () => {
-  // Open the user's email client with pre-filled recipient, subject, and body
-  window.location.href = "mailto:transportationcenturion@gmail.com?subject=Request%20for%20Quote&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20a%20quote%20for%20transportation%20services.%0A%0AThank%20you.";
+quoteForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // Get form values
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+
+  // Create email body
+  const body = `Hello,%0A%0AI would like to request a quote for transportation services.%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0A%0AThank you.`;
+
+  // Open user's email client
+  window.location.href = `mailto:transportationcenturion@gmail.com?subject=Request%20for%20Quote&body=${body}`;
 });
