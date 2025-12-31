@@ -1,8 +1,14 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Menlo, monospace;
   margin: 0;
   color: #1f2937;
   background-color: #ffffff;
+  line-height: 1.6;
 }
 
 /* Header */
@@ -13,22 +19,13 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 3rem;
-}
-
-header p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-
-/* Sections */
+/* Section Layout */
 section {
   padding: 60px 20px;
   text-align: center;
 }
 
+/* Services */
 .services {
   display: flex;
   justify-content: center;
@@ -39,11 +36,15 @@ section {
 
 .service-card {
   width: 250px;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
   padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
   background-color: #f8f9fa;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+  margin-top: 0;
 }
 
 .service-card:hover {
@@ -51,6 +52,7 @@ section {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Why Choose Us */
 .why-choose {
   background-color: #f1f5f9;
 }
@@ -58,20 +60,29 @@ section {
 .why-choose ul {
   list-style: none;
   padding: 0;
+  margin: 30px auto 0;
   max-width: 800px;
-  margin: 0 auto;
   font-size: 1.1rem;
+}
+
+.why-choose li {
+  margin-bottom: 12px;
 }
 
 .why-choose li::before {
   content: "✔ ";
   color: #0f172a;
+  font-weight: bold;
 }
 
-/* Contact Form */
+/* Contact Section */
+.contact p {
+  margin: 8px 0;
+}
+
 .contact form {
   max-width: 400px;
-  margin: 20px auto 0;
+  margin: 30px auto 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -79,22 +90,20 @@ section {
 
 .contact input {
   padding: 10px;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
   font-size: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
 }
 
 .contact button {
-  padding: 12px 20px;
+  padding: 12px;
   font-size: 1rem;
+  border-radius: 6px;
+  border: none;
   background-color: #0f172a;
   color: #ffffff;
-  border: none;
-  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact button:hover {
@@ -106,7 +115,8 @@ section {
 footer {
   background-color: #0f172a;
   color: #ffffff;
-  padding: 40px 20px;
   text-align: center;
+  padding: 40px 20px;
 }
+
 
