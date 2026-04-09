@@ -1,11 +1,12 @@
 /* ================= BASE RESET ================= */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: Menlo, monospace;
-  margin: 0;
   color: #1f2937;
   background-color: #ffffff;
   line-height: 1.6;
@@ -76,7 +77,7 @@ section {
 }
 
 .service-card h3 {
-  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 /* Hover animation */
@@ -108,29 +109,34 @@ section {
   font-weight: bold;
 }
 
-/* ================= CONTACT ================= */
-.contact p {
-  margin: 8px 0;
-}
-
-.contact form {
-  max-width: 400px;
-  margin: 30px auto 0;
+/* ================= FORMS (GLOBAL - CONTACT PAGE) ================= */
+form {
+  max-width: 450px;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
 }
 
-.contact input {
+/* Inputs & textarea */
+form input,
+form textarea {
   padding: 12px;
   font-size: 1rem;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
+  width: 100%;
 }
 
-/* Button styled to match theme */
-.contact button {
-  padding: 12px;
+/* Textarea size */
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Button */
+form button {
+  padding: 14px;
   font-size: 1rem;
   border-radius: 25px;
   border: 2px solid #0f172a;
@@ -140,7 +146,8 @@ section {
   transition: all 0.3s ease;
 }
 
-.contact button:hover {
+/* Button hover */
+form button:hover {
   background-color: #ffffff;
   color: #0f172a;
   transform: translateY(-2px);
