@@ -144,11 +144,6 @@ form button {
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
-}
-header img {
-  display: block;
-  margin: 0 auto 20px auto;
-}
 
 /* Button hover */
 form button:hover {
