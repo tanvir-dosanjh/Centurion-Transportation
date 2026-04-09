@@ -144,6 +144,7 @@ form button {
   color: #ffffff;
   cursor: pointer;
   transition: all 0.3s ease;
+}  /* ← THIS WAS MISSING */
 
 /* Button hover */
 form button:hover {
@@ -156,8 +157,12 @@ form button:hover {
 footer {
   background-color: #0f172a;
   color: #ffffff;
-  text-align: center;
   padding: 40px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 
