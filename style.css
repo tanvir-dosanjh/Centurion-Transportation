@@ -277,63 +277,22 @@ footer {
 /* ================= TABLET ================= */
 @media (max-width: 768px) {
   .logo {
-    width: 180px;
+    width: 160px;
+    margin-bottom: 14px;
   }
 
   header {
-    padding: 45px 16px;
+    padding: 36px 16px;
   }
 
-  .brand {
-    font-size: 1.9rem;
-  }
-
+  .brand,
   header h1 {
-    font-size: 1.9rem;
-  }
-
-  section {
-    padding: 40px 16px;
-  }
-
-  .service-card {
-    width: 100%;
-    max-width: 340px;
-  }
-}
-
-/* ================= MOBILE ================= */
-/* ================= TABLET ================= */
-@media (max-width: 768px) {
-  .logo {
-    width: 170px;
-  }
-
-  nav {
-    gap: 8px;
-    padding: 12px 10px;
-  }
-
-  nav a {
-    padding: 8px 14px;
-    font-size: 0.95rem;
-  }
-
-  header {
-    padding: 42px 16px;
-  }
-
-  .brand {
-    font-size: 1.9rem;
-  }
-
-  header h1 {
-    font-size: 1.9rem;
+    font-size: 1.75rem;
   }
 
   header h2 {
-    font-size: 1.15rem;
-    margin-top: 14px;
+    font-size: 1.08rem;
+    margin-top: 12px;
     margin-bottom: 10px;
   }
 
@@ -343,21 +302,16 @@ footer {
   }
 
   section {
-    padding: 40px 16px;
+    padding: 36px 16px;
   }
 
   section h2 {
-    font-size: 1.4rem;
-  }
-
-  section p {
-    max-width: 100%;
-    font-size: 0.95rem;
+    font-size: 1.35rem;
   }
 
   .services {
-    gap: 18px;
-    margin-top: 25px;
+    gap: 16px;
+    margin-top: 24px;
   }
 
   .service-card {
@@ -372,14 +326,17 @@ footer {
   }
 
   .cta-btn {
-    width: auto;
-    max-width: 100%;
     padding: 12px 22px;
     font-size: 0.95rem;
   }
 
+  .why-choose ul {
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0 8px;
+  }
+
   form {
-    width: 100%;
     max-width: 100%;
   }
 
@@ -388,72 +345,74 @@ footer {
   form button {
     font-size: 16px;
   }
-
-  footer {
-    padding: 28px 16px;
-    font-size: 0.9rem;
-  }
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 480px) {
-  .logo {
-    width: 130px;
-    margin-bottom: 14px;
+  .menu-toggle {
+    display: block;
   }
 
-  nav {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    background-color: #0f172a;
     flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 12px;
+    gap: 10px;
+    padding: 14px 0 18px;
+    z-index: 1000;
   }
 
-  nav a {
-    width: 90%;
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 88%;
     max-width: 260px;
+    margin: 0 auto;
     text-align: center;
     padding: 10px 14px;
     font-size: 0.9rem;
   }
 
-  header {
-    padding: 34px 14px;
+  .logo {
+    width: 125px;
+    margin-bottom: 12px;
   }
 
   .brand,
   header h1 {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
   }
 
-  header h2 {
-    font-size: 1rem;
-    margin-top: 12px;
-    margin-bottom: 8px;
-  }
-
-  header p {
-    font-size: 0.92rem;
-  }
-
-  section {
+  header {
     padding: 30px 14px;
   }
 
-  section h2 {
-    font-size: 1.2rem;
+  header h2 {
+    font-size: 0.98rem;
+    margin-top: 10px;
+    margin-bottom: 8px;
   }
 
+  header p,
   section p {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
   }
 
-  .services {
-    gap: 14px;
+  section {
+    padding: 28px 14px;
+  }
+
+  section h2 {
+    font-size: 1.15rem;
   }
 
   .service-card {
-    max-width: 100%;
     padding: 18px;
   }
 
@@ -463,12 +422,8 @@ footer {
     text-align: center;
   }
 
-  .vehicle-img {
-    border-radius: 10px;
-  }
-
   footer {
-    padding: 24px 14px;
+    padding: 22px 14px;
     font-size: 0.85rem;
   }
 }
