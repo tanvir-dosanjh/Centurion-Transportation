@@ -80,24 +80,33 @@ nav a.active {
   color: #0f172a;
 }
 
-/* ================= CTA BUTTON ================= */
-.cta-btn {
+/* CTA SECTION */
+.cta-section {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* NICE BUTTON STYLE */
+.cta-btn.primary {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 28px;
-  background-color: #ffffff;
+  margin-top: 25px;
+  padding: 14px 34px;
+  background: linear-gradient(135deg, #ffffff, #e2e8f0);
   color: #0f172a;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 30px;
   font-weight: 600;
-  border: 2px solid #ffffff;
+  letter-spacing: 0.5px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   transition: all 0.3s ease;
 }
 
-.cta-btn:hover {
-  background-color: #0f172a;
-  color: #ffffff;
-  transform: translateY(-2px);
+/* HOVER EFFECT */
+.cta-btn.primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  background: #ffffff;
 }
 
 /* ================= SECTIONS ================= */
