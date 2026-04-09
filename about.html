@@ -5,28 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Centurion Transportation</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
   <!-- Navigation -->
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Centurion</a>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Centurion</a>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-      ☰
-    </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        ☰
+      </button>
 
-    <div class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="reviews.html">Reviews</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
   <!-- Header -->
   <header>
     <h1>About Centurion Transportation</h1>
@@ -62,18 +62,19 @@
     </ul>
   </section>
 
-</script>
   <!-- Footer -->
   <footer>
     &copy; 2025 Centurion Transportation. All rights reserved.
   </footer>
-<script>
-  const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
-  });
-</script>
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+
 </body>
 </html>
