@@ -250,11 +250,18 @@ footer {
   align-items: center;
   text-align: center;
 }
+
 .logo {
-  width: 120px;
-  margin-bottom: 15px;
+  width: 180px;
+  margin-bottom: 20px;
   background: transparent;
   mix-blend-mode: lighten;
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 120px;
+  }
 }
 /* ================= TABLET ================= */
 @media (max-width: 768px) {
