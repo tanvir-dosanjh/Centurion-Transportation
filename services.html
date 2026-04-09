@@ -9,23 +9,23 @@
 <body>
 
   <!-- Navigation -->
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Centurion</a>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Centurion</a>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-      ☰
-    </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        ☰
+      </button>
 
-    <div class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="reviews.html">Reviews</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- Header -->
   <header>
@@ -70,7 +70,7 @@
     </div>
   </section>
 
-  <!-- VEHICLE SECTION (NEW) -->
+  <!-- Vehicle Section -->
   <section>
     <h2>Our Vehicle</h2>
 
@@ -113,15 +113,16 @@
     &copy; 2025 Centurion Transportation. All rights reserved.
   </footer>
 
-  
   <script>
     const menuToggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
 
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-    });
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    }
   </script>
-  
+
 </body>
 </html>
