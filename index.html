@@ -2,111 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centurion Transportation</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">Centurion</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Centurion</a>
 
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-      ☰
-    </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        ☰
+      </button>
 
-    <div class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="reviews.html">Reviews</a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="reviews.html">Reviews</a>
+      </div>
     </div>
-  </div>
-</nav>
-<!-- Hero Header -->
-<header>
-  <img src="logo.png" alt="Centurion Logo" class="logo">
+  </nav>
 
-  <h1>Luxury & Reliable Transportation You Can Trust</h1>
+  <!-- Hero Header -->
+  <header>
+    <img src="logo.png" alt="Centurion Logo" class="logo">
 
-  <p>
-    Professional transportation services across Washington State and Vancouver, BC.
-  </p>
+    <h1>Luxury & Reliable Transportation You Can Trust</h1>
 
-  <a href="contact.html" class="cta-btn">Get a Quote</a>
-</header>
-<!-- Intro Section -->
-<section>
-  <h2>Your Trusted Transportation Partner</h2>
- <p>
-  Professional, reliable transportation for local rides, airport transfers, 
-  and long-distance travel.
-</p>
-</section>
+    <p>
+      Professional transportation services across Washington State and Vancouver, BC.
+    </p>
 
-<!-- Services Preview -->
-<section>
-  <h2>What We Offer</h2>
-  <div class="services">
+    <a href="contact.html" class="cta-btn">Get a Quote</a>
+  </header>
 
-    <div class="service-card">
-      <h3>Local Transportation</h3>
-      <p>Convenient and reliable rides within your city and nearby areas.</p>
+  <!-- Intro Section -->
+  <section>
+    <h2>Your Trusted Transportation Partner</h2>
+    <p>
+      Professional, reliable transportation for local rides, airport transfers,
+      and long-distance travel.
+    </p>
+  </section>
+
+  <!-- Services Preview -->
+  <section>
+    <h2>What We Offer</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Local Transportation</h3>
+        <p>Convenient and reliable rides within your city and nearby areas.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Long-Distance Trips</h3>
+        <p>Comfortable travel throughout Washington State and into Vancouver, BC.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Airport Transfers</h3>
+        <p>Prompt pickups and drop-offs to help you travel with confidence and ease.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="service-card">
-      <h3>Long-Distance Trips</h3>
-      <p>Comfortable travel throughout Washington State and into Vancouver, BC.</p>
-    </div>
+  <!-- Why Choose Us -->
+  <section class="why-choose">
+    <h2>Why Choose Centurion Transportation</h2>
+    <ul>
+      <li>Always on-time</li>
+      <li>Professional drivers</li>
+      <li>Clean, comfortable vehicles</li>
+      <li>Serving WA & Vancouver, BC</li>
+      <li>Reliable every time</li>
+    </ul>
+  </section>
 
-    <div class="service-card">
-      <h3>Airport Transfers</h3>
-      <p>Prompt pickups and drop-offs to help you travel with confidence and ease.</p>
-    </div>
+  <!-- Trust Section -->
+  <section>
+    <h2>Travel With Confidence</h2>
+    <p>
+      We are committed to providing a transportation experience built on safety,
+      professionalism, and customer care. Every ride is handled with attention to
+      comfort, punctuality, and dependable service you can trust.
+    </p>
+  </section>
 
-  </div>
-</section>
-
-<!-- Why Choose Us -->
-<section class="why-choose">
-  <h2>Why Choose Centurion Transportation</h2>
-  <ul>
-   <li>Always on-time</li>
-<li>Professional drivers</li>
-<li>Clean, comfortable vehicles</li>
-<li>Serving WA & Vancouver, BC</li>
-<li>Reliable every time</li>
-  </ul>
-</section>
-
-<!-- Trust Section -->
-<section>
-  <h2>Travel With Confidence</h2>
-  <p>
-    We are committed to providing a transportation experience built on safety,
-    professionalism, and customer care. Every ride is handled with attention to
-    comfort, punctuality, and dependable service you can trust.
-  </p>
-</section>
-
-<!-- Call to Action -->
-<section>
-  <h2>Book Your Ride Today</h2>
-  <p>Contact us now to request a quote and schedule your transportation.</p>
-  <p>
+  <!-- Call to Action -->
+  <section>
+    <h2>Book Your Ride Today</h2>
+    <p>Contact us now to request a quote and schedule your transportation.</p>
     <a href="contact.html" class="cta-btn">Request a Quote</a>
-  </p>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer>
-  &copy; 2025 Centurion Transportation. All rights reserved.
-</footer>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Centurion Transportation. All rights reserved.
+  </footer>
 
-  
   <script>
     const menuToggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
@@ -115,6 +112,6 @@
       navLinks.classList.toggle("show");
     });
   </script>
-  
+
 </body>
 </html>
