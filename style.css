@@ -108,6 +108,17 @@ nav a.active {
 .cta-section p {
   margin-top: 10px;
 }
+/* CTA BUTTON FOR DARK SECTIONS */
+.cta-light {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 2px solid #ffffff;
+}
+
+.cta-light:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
 
 /* ================= SECTIONS ================= */
 section {
