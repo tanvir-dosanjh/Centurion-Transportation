@@ -20,6 +20,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* ================= NAVBAR ================= */
@@ -89,10 +90,9 @@ header {
   text-align: center;
 }
 
-/* ================= LOGO ================= */
 .logo {
   width: 220px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   background: transparent;
   mix-blend-mode: lighten;
   filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.4));
@@ -131,7 +131,7 @@ header p {
   margin: 0 auto;
 }
 
-/* ================= CTA BUTTON ================= */
+/* ================= CTA BUTTONS ================= */
 .cta-btn {
   display: inline-block;
   margin-top: 20px;
@@ -151,7 +151,6 @@ header p {
   transform: translateY(-2px);
 }
 
-/* ================= CTA SECTION ================= */
 .cta-section {
   background-color: #0f172a;
   color: #ffffff;
@@ -178,13 +177,13 @@ section {
   text-align: center;
 }
 
+section h2 {
+  line-height: 1.25;
+}
+
 section p {
   max-width: 800px;
   margin: 15px auto 0;
-}
-
-section h2 {
-  line-height: 1.25;
 }
 
 /* ================= SERVICES ================= */
@@ -214,12 +213,12 @@ section h2 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* ================= VEHICLE ================= */
+/* ================= VEHICLE IMAGE ================= */
 .vehicle-img {
   width: 100%;
   max-width: 500px;
+  margin: 20px auto 0;
   border-radius: 12px;
-  margin-top: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
 }
@@ -228,25 +227,33 @@ section h2 {
   transform: scale(1.02);
 }
 
-/* ================= WHY CHOOSE ================= */
+/* ================= LIGHT SECTION ================= */
 .why-choose {
   background-color: #f1f5f9;
 }
 
-.why-choose ul {
+/* ================= CLEAN CHECK LISTS ================= */
+ul {
   list-style: none;
   padding: 0;
   margin: 30px auto 0;
   max-width: 800px;
-  font-size: 1.1rem;
+  display: inline-block;
+  text-align: left;
 }
 
-.why-choose li {
+li {
   margin-bottom: 12px;
+  font-size: 1.05rem;
+  position: relative;
+  padding-left: 28px;
 }
 
-.why-choose li::before {
-  content: "✔ ";
+li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
   color: #0f172a;
   font-weight: bold;
 }
@@ -254,7 +261,7 @@ section h2 {
 /* ================= FORMS ================= */
 form {
   max-width: 450px;
-  margin: 30px auto;
+  margin: 30px auto 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -346,6 +353,10 @@ footer {
     font-size: 1.35rem;
   }
 
+  section p {
+    max-width: 100%;
+  }
+
   .services {
     gap: 16px;
     margin-top: 24px;
@@ -367,10 +378,13 @@ footer {
     font-size: 0.95rem;
   }
 
-  .why-choose ul {
-    font-size: 1rem;
+  ul {
     max-width: 100%;
     padding: 0 8px;
+  }
+
+  li {
+    font-size: 1rem;
   }
 
   form {
@@ -457,6 +471,11 @@ footer {
     width: 90%;
     max-width: 260px;
     text-align: center;
+  }
+
+  li {
+    font-size: 0.95rem;
+    padding-left: 24px;
   }
 
   footer {
