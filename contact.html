@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Centurion Transportation</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -21,57 +20,62 @@
   <!-- Header -->
   <header>
     <h1>Book Your Ride</h1>
-    <p>Reliable, professional transportation tailored to your travel needs.</p>
+    <p>Fast quotes. Reliable service.</p>
   </header>
 
-  <!-- Contact Information -->
+  <!-- Contact Info -->
   <section>
     <h2>Get in Touch</h2>
-    <p>We’re here to help with quotes, booking requests, and trip questions.</p>
-    <br>
+
     <p>
-      <strong>Email:</strong>
-      <a href="mailto:transportationcenturion@gmail.com">transportationcenturion@gmail.com</a>
+      📧 <a href="mailto:transportationcenturion@gmail.com">
+      transportationcenturion@gmail.com</a>
     </p>
+
     <p>
-      <strong>Phone:</strong>
-      <a href="tel:+14254199067">(425) 419-9067</a>
+      📞 <a href="tel:+14254199067">(425) 419-9067</a>
     </p>
+
     <p>
-      <strong>Service Area:</strong> Washington State and Vancouver, BC
+      📍 Serving Washington State & Vancouver, BC
     </p>
-    <p style="margin-top: 15px;">
-      We typically respond as quickly as possible to all booking inquiries.
+
+    <p style="margin-top: 10px;">
+      We typically respond within a few hours.
     </p>
   </section>
 
   <!-- Booking Form -->
   <section>
     <h2>Request a Booking</h2>
-    <p>Please fill out the form below and we’ll get back to you with availability and pricing.</p>
+    <p>Fill out the details below and we’ll confirm your ride.</p>
 
     <form action="https://formsubmit.co/transportationcenturion@gmail.com" method="POST">
       
-      <!-- Hidden Settings -->
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="New Centurion Transportation Booking Request">
+      <input type="hidden" name="_subject" value="New Booking Request">
 
-      <!-- Customer Info -->
       <input type="text" name="name" placeholder="Full Name" required>
       <input type="email" name="email" placeholder="Email Address" required>
       <input type="tel" name="phone" placeholder="Phone Number" required>
 
-      <!-- Trip Details -->
-      <input type="text" name="pickup_location" placeholder="Pickup Location" required>
-      <input type="text" name="dropoff_location" placeholder="Drop-off Location" required>
-      <input type="date" name="trip_date" required>
-      <input type="time" name="trip_time" required>
+      <input type="text" name="pickup" placeholder="Pickup Location" required>
+      <input type="text" name="dropoff" placeholder="Drop-off Location" required>
 
-      <!-- Extra Details -->
-      <textarea name="trip_details" placeholder="Enter any additional details such as number of passengers, luggage, airport information, or special requests..."></textarea>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+
+      <textarea name="notes" placeholder="Passengers, luggage, or special requests..."></textarea>
 
       <button type="submit">Request Booking</button>
     </form>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Need a Ride Now?</h2>
+    <p>Call us directly for faster booking.</p>
+    <a href="tel:+14254199067" class="cta-btn cta-light">Call Now</a>
   </section>
 
   <!-- Footer -->
