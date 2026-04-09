@@ -62,6 +62,13 @@
     </ul>
   </section>
 
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Book Your Ride</h2>
+    <p>Contact us today to request a quote.</p>
+    <a href="contact.html" class="cta-btn cta-light">Request a Quote</a>
+  </section>
+
   <!-- Footer -->
   <footer>
     &copy; 2025 Centurion Transportation. All rights reserved.
@@ -71,9 +78,11 @@
     const menuToggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
 
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-    });
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    }
   </script>
 
 </body>
