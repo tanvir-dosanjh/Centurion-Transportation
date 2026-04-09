@@ -231,73 +231,13 @@ footer {
   align-items: center;
   text-align: center;
 }
-/* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
+.cta-light {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 2px solid #ffffff;
+}
 
-  /* Navigation stacks nicely */
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav a {
-    width: 90%;
-    text-align: center;
-  }
-
-  /* Header text scales down */
-  header {
-    padding: 40px 15px;
-  }
-
-  .brand {
-    font-size: 1.8rem;
-  }
-
-  header h2 {
-    font-size: 1.2rem;
-  }
-
-  header p {
-    font-size: 0.95rem;
-    padding: 0 10px;
-  }
-
-  /* Sections tighter */
-  section {
-    padding: 40px 15px;
-  }
-
-  /* Services stack vertically */
-  .services {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .service-card {
-    width: 90%;
-  }
-
-  /* Buttons full width */
-  .cta-btn {
-    width: 90%;
-    text-align: center;
-  }
-
-  /* Form fits screen */
-  form {
-    width: 90%;
-  }
-
-  /* Lists spacing */
-  .why-choose ul {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  /* Footer padding */
-  footer {
-    padding: 30px 15px;
-  }
+.cta-light:hover {
+  background-color: transparent;
+  color: #ffffff;
 }
