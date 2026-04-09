@@ -100,18 +100,21 @@
     <a href="contact.html" class="cta-btn">Request a Quote</a>
   </p>
 </section>
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const links = document.getElementById("nav-links");
 
-  toggle.addEventListener("click", () => {
-    links.classList.toggle("active");
-  });
-</script>
 <!-- Footer -->
 <footer>
   &copy; 2025 Centurion Transportation. All rights reserved.
 </footer>
 
+  
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+  
 </body>
 </html>
