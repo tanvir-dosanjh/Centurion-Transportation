@@ -252,8 +252,9 @@ footer {
 }
 .logo {
   width: 120px;
-  height: auto;
   margin-bottom: 15px;
+  background: transparent;
+  mix-blend-mode: lighten;
 }
 /* ================= TABLET ================= */
 @media (max-width: 768px) {
