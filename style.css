@@ -5,8 +5,7 @@
   padding: 0;
 }
 
-html,
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -28,6 +27,15 @@ header {
   color: #ffffff;
   padding: 60px 20px;
   text-align: center;
+}
+
+/* 🔥 BIGGER LOGO */
+.logo {
+  width: 220px;
+  margin-bottom: 20px;
+  background: transparent;
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0 6px 15px rgba(0,0,0,0.4));
 }
 
 .brand {
@@ -71,6 +79,7 @@ nav {
   gap: 12px;
   background-color: #0f172a;
   padding: 15px 12px;
+  margin-bottom: 10px;
 }
 
 nav a {
@@ -177,6 +186,20 @@ section h2 {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* ================= VEHICLE ================= */
+.vehicle-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.vehicle-img:hover {
+  transform: scale(1.02);
+}
+
 /* ================= WHY CHOOSE ================= */
 .why-choose {
   background-color: #f1f5f9;
@@ -251,34 +274,10 @@ footer {
   text-align: center;
 }
 
-.logo {
-  width: 180px;
-  margin-bottom: 20px;
-  background: transparent;
-  mix-blend-mode: lighten;
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: 120px;
-  }
-}
-.vehicle-img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  margin-top: 20px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease;
-}
-
-.vehicle-img:hover {
-  transform: scale(1.02);
-}
 /* ================= TABLET ================= */
 @media (max-width: 768px) {
-  body {
-    font-size: 15px;
+  .logo {
+    width: 180px;
   }
 
   header {
@@ -293,119 +292,34 @@ footer {
     font-size: 1.9rem;
   }
 
-  header h2 {
-    font-size: 1.15rem;
-    margin-top: 16px;
-    margin-bottom: 10px;
-  }
-
-  header p {
-    max-width: 100%;
-    font-size: 0.95rem;
-  }
-
-  nav {
-    gap: 10px;
-    padding: 12px 10px;
-  }
-
-  nav a {
-    padding: 8px 16px;
-    font-size: 0.95rem;
-  }
-
   section {
     padding: 40px 16px;
-  }
-
-  section h2 {
-    font-size: 1.4rem;
-  }
-
-  section p {
-    max-width: 100%;
-    font-size: 0.95rem;
-  }
-
-  .services {
-    gap: 18px;
-    margin-top: 25px;
   }
 
   .service-card {
     width: 100%;
     max-width: 340px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .why-choose ul {
-    max-width: 100%;
-    font-size: 1rem;
-    padding: 0 6px;
-    margin-top: 20px;
-  }
-
-  .cta-btn {
-    padding: 12px 22px;
-    font-size: 0.95rem;
-  }
-
-  form {
-    width: 100%;
-    max-width: 100%;
-    margin: 25px auto 0;
-  }
-
-  form input,
-  form textarea,
-  form button {
-    font-size: 16px;
-  }
-
-  footer {
-    padding: 28px 16px;
-    font-size: 0.9rem;
   }
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 480px) {
-  nav {
-    gap: 8px;
+  .logo {
+    width: 150px;
   }
 
   nav a {
     width: 100%;
     max-width: 220px;
     text-align: center;
-    padding: 9px 14px;
-    font-size: 0.9rem;
   }
 
   header {
     padding: 36px 14px;
   }
 
-  .brand,
-  header h1 {
-    font-size: 1.6rem;
-  }
-
-  header h2 {
-    font-size: 1rem;
-  }
-
   section {
     padding: 32px 14px;
-  }
-
-  section h2 {
-    font-size: 1.25rem;
-  }
-
-  .service-card {
-    max-width: 100%;
   }
 
   .cta-btn {
