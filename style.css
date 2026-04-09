@@ -250,7 +250,11 @@ footer {
   align-items: center;
   text-align: center;
 }
-
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+}
 /* ================= TABLET ================= */
 @media (max-width: 768px) {
   body {
