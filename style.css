@@ -5,11 +5,21 @@
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Menlo, monospace;
   color: #1f2937;
   background-color: #ffffff;
   line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ================= HEADER ================= */
@@ -36,6 +46,11 @@ header {
   margin: 10px auto 0;
 }
 
+header h1,
+header h2 {
+  line-height: 1.2;
+}
+
 header h2 {
   font-size: 1.5rem;
   font-weight: 500;
@@ -52,10 +67,10 @@ header p {
 nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  background-color: #0f172a;
-  padding: 15px 0;
   flex-wrap: wrap;
+  gap: 12px;
+  background-color: #0f172a;
+  padding: 15px 12px;
 }
 
 nav a {
@@ -79,7 +94,7 @@ nav a.active {
   color: #0f172a;
 }
 
-/* ================= CTA BUTTON (MATCH CONTACT PAGE) ================= */
+/* ================= CTA BUTTON ================= */
 .cta-btn {
   display: inline-block;
   margin-top: 20px;
@@ -108,7 +123,7 @@ nav a.active {
 .cta-section p {
   margin-top: 10px;
 }
-/* CTA BUTTON FOR DARK SECTIONS */
+
 .cta-light {
   background-color: #ffffff;
   color: #0f172a;
@@ -131,12 +146,16 @@ section p {
   margin: 15px auto 0;
 }
 
+section h2 {
+  line-height: 1.25;
+}
+
 /* ================= SERVICES ================= */
 .services {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 24px;
   margin-top: 40px;
 }
 
@@ -192,11 +211,11 @@ form {
 
 form input,
 form textarea {
+  width: 100%;
   padding: 12px;
   font-size: 1rem;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
-  width: 100%;
 }
 
 form textarea {
@@ -231,13 +250,143 @@ footer {
   align-items: center;
   text-align: center;
 }
-.cta-light {
-  background-color: #ffffff;
-  color: #0f172a;
-  border: 2px solid #ffffff;
+
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  header {
+    padding: 45px 16px;
+  }
+
+  .brand {
+    font-size: 1.9rem;
+  }
+
+  header h1 {
+    font-size: 1.9rem;
+  }
+
+  header h2 {
+    font-size: 1.15rem;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  nav {
+    gap: 10px;
+    padding: 12px 10px;
+  }
+
+  nav a {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+
+  section {
+    padding: 40px 16px;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  section p {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .services {
+    gap: 18px;
+    margin-top: 25px;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .why-choose ul {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0 6px;
+    margin-top: 20px;
+  }
+
+  .cta-btn {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+    margin: 25px auto 0;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 28px 16px;
+    font-size: 0.9rem;
+  }
 }
 
-.cta-light:hover {
-  background-color: transparent;
-  color: #ffffff;
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+  nav {
+    gap: 8px;
+  }
+
+  nav a {
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+    padding: 9px 14px;
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 36px 14px;
+  }
+
+  .brand,
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 32px 14px;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
 }
