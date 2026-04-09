@@ -1,4 +1,4 @@
-/* Base Reset */
+/* ================= BASE RESET ================= */
 * {
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* ================= HEADER ================= */
 header {
   background-color: #0f172a;
   color: #ffffff;
@@ -19,47 +19,45 @@ header {
   text-align: center;
 }
 
-/* Section Layout */
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-/* Navigation bar */
+/* ================= NAVIGATION ================= */
 nav {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #111;
+  background-color: #0f172a;
   padding: 15px 0;
 }
 
-/* Nav links styled as buttons */
 nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 25px;
+  border: 2px solid #ffffff;
   transition: all 0.3s ease;
-  background: transparent;
-  border: 2px solid transparent;
 }
 
 /* Hover effect */
 nav a:hover {
-  background-color: #f4b400; /* gold accent */
-  color: #111;
+  background-color: #ffffff;
+  color: #0f172a;
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Active/selected page (optional) */
+/* Active page */
 nav a.active {
-  background-color: #f4b400;
-  color: #111;
+  background-color: #ffffff;
+  color: #0f172a;
 }
 
-/* Services */
+/* ================= SECTIONS ================= */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ================= SERVICES ================= */
 .services {
   display: flex;
   justify-content: center;
@@ -69,11 +67,11 @@ nav a.active {
 }
 
 .service-card {
-  width: 250px;
-  padding: 20px;
-  border-radius: 8px;
+  width: 260px;
+  padding: 25px;
+  border-radius: 12px;
   border: 1px solid #e2e8f0;
-  background-color: #f8f9fa;
+  background-color: #f8fafc;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -81,12 +79,13 @@ nav a.active {
   margin-top: 0;
 }
 
+/* Hover animation */
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Why Choose Us */
+/* ================= WHY CHOOSE ================= */
 .why-choose {
   background-color: #f1f5f9;
 }
@@ -109,7 +108,7 @@ nav a.active {
   font-weight: bold;
 }
 
-/* Contact Section */
+/* ================= CONTACT ================= */
 .contact p {
   margin: 8px 0;
 }
@@ -123,29 +122,31 @@ nav a.active {
 }
 
 .contact input {
-  padding: 10px;
+  padding: 12px;
   font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #e2e8f0;
 }
 
+/* Button styled to match theme */
 .contact button {
   padding: 12px;
   font-size: 1rem;
-  border-radius: 6px;
-  border: none;
+  border-radius: 25px;
+  border: 2px solid #0f172a;
   background-color: #0f172a;
   color: #ffffff;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .contact button:hover {
-  background-color: #1e293b;
-  transform: scale(1.05);
+  background-color: #ffffff;
+  color: #0f172a;
+  transform: translateY(-2px);
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 footer {
   background-color: #0f172a;
   color: #ffffff;
