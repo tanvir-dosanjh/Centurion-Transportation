@@ -303,28 +303,172 @@ footer {
 }
 
 /* ================= MOBILE ================= */
-@media (max-width: 480px) {
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
   .logo {
-    width: 150px;
+    width: 170px;
+  }
+
+  nav {
+    gap: 8px;
+    padding: 12px 10px;
   }
 
   nav a {
-    width: 100%;
-    max-width: 220px;
-    text-align: center;
+    padding: 8px 14px;
+    font-size: 0.95rem;
   }
 
   header {
-    padding: 36px 14px;
+    padding: 42px 16px;
+  }
+
+  .brand {
+    font-size: 1.9rem;
+  }
+
+  header h1 {
+    font-size: 1.9rem;
+  }
+
+  header h2 {
+    font-size: 1.15rem;
+    margin-top: 14px;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 0.95rem;
+    max-width: 100%;
   }
 
   section {
-    padding: 32px 14px;
+    padding: 40px 16px;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  section p {
+    max-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .services {
+    gap: 18px;
+    margin-top: 25px;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .vehicle-img {
+    max-width: 100%;
   }
 
   .cta-btn {
+    width: auto;
+    max-width: 100%;
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+
+  form {
     width: 100%;
-    max-width: 280px;
+    max-width: 100%;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 28px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+  .logo {
+    width: 130px;
+    margin-bottom: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+  }
+
+  nav a {
+    width: 90%;
+    max-width: 260px;
     text-align: center;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 34px 14px;
+  }
+
+  .brand,
+  header h1 {
+    font-size: 1.55rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  header p {
+    font-size: 0.92rem;
+  }
+
+  section {
+    padding: 30px 14px;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  section p {
+    font-size: 0.92rem;
+  }
+
+  .services {
+    gap: 14px;
+  }
+
+  .service-card {
+    max-width: 100%;
+    padding: 18px;
+  }
+
+  .cta-btn {
+    width: 90%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  .vehicle-img {
+    border-radius: 10px;
+  }
+
+  footer {
+    padding: 24px 14px;
+    font-size: 0.85rem;
   }
 }
